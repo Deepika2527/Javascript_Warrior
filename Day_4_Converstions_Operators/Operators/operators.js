@@ -162,16 +162,16 @@
 // console.log(!logIn);
 
 
-// let isNight = true;
+let isNight = true;
 
-// if(!isNight){
-//     console.log('Turn off the lights');
+if(!isNight){
+    console.log('Turn off the lights');
     
-// }
-// else{
-//     console.log('Turn on the light');
+}
+else{
+    console.log('Turn on the light');
     
-// }
+}
 
 
 //ternary
