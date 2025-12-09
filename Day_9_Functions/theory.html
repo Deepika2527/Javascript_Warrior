@@ -78,9 +78,23 @@ Function expression doesnt accepts hositing
 7. Variable function - Done
 A function assigned to a varaiable is called varaible function
 
-6. SelfInvokingfunction/IIFE
+6. SelfInvokingfunction/IIFE-Immediately Invoking Function expression: Done
 
-7. Anonoymus function-  
+synatx:
+(function(){
+//block of code
+})
+();
+
+HERE  THE FUNCTION IS WRAPPED IN BRACKETS AND THEN CALLED USING ();
+INDIDE THE ()-THE FUNCTION WILL BE AUTIOMATICALLY CONVERTED INTO A FUNCTION EXPRESSION
+
+
+
+
+
+
+7. Anonoymus function-  Done
 A function without a name is called anonymous
 It doesnt have its own name
 its is stored in a a varaible
@@ -91,14 +105,42 @@ setTimeOut()-Executes a function after a specific number of Milliseconds
 setTimeout(function,delay,arg1, arg2)
 
 setInterval()-
+ Run the code in the interval of time
+ syntax:
+ setInterval(function(),delay,arg1,arg2)
+
 
 Task setInterval
 how to clear/stop setTimeout and setInterval
 
 
-8. Call backfunction
+8. Call backfunction-
+ A function that goes as a parameter to another function is called callback
 
-9. High order function
+
+ syntax:
+ function one(callback)
+ {
+
+ //block of code
+ callback()
+
+ }
+
+ function two()
+ {
+ //block of code
+ }
+ one(two)
+
+
+
+
+
+9. High order function:
+1. a FUNCTION THAT ACCEPTS ANOTHER FUNCTION AS A paremter is called high order function
+2. we use retun
+3. example- map,reduce,filter
 
 10. Arrow function
 

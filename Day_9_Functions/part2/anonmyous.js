@@ -24,3 +24,30 @@ setTimeout(function(){
 },2000)
 console.log("End");
 
+
+//
+
+
+setTimeout(function(){
+    document.getElementById("para").style.display = "none";
+},4000);
+
+
+setTimeout(function(){
+    document.getElementById("mgs").innerText =" Hello Anuradha"
+},8000)
+
+
+
+//
+
+let greetings= setTimeout(function(name){
+    console.log(`Hello ${name}`);
+    
+},3000,'Students')
+clearTimeout(greetings)
+
+
+
+
+
