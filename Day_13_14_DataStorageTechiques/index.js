@@ -97,7 +97,7 @@ console.log(str);
 console.log(str.length);
 
 console.log("******");
-console.log(str.slice(2,6));
+console.log(str.slice(2,6));  //2,5
 
 console.log(str.substring(2,6));
 
