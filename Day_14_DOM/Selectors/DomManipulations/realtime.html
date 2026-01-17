@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listexamples</title>
+</head>
+
+<body>
+
+    <ul id="list">
+        <li id="li1">List 1</li>
+        <li id="li2">List 2</li>
+        <li id="li3">List 3</li>
+        <li id="li4">List 4</li>
+        <li id="li5">List 5</li>
+
+    </ul>
+
+
+    <figure>
+        <img src="https://images.pexels.com/photos/35228125/pexels-photo-35228125.jpeg" alt="im1" width="200px" height="300px">
+        <figcaption></figcaption>
+    </figure>
+<!-- list 3 list 4 lits5 -->
+
+    <script>
+        let list = document.getElementById('list');
+        console.log(list);
+        //storing the list in li's
+        let li1 = document.getElementById('li1')
+        let li2 = document.getElementById('li2')
+        let li3 = document.getElementById('li3')
+        let li4 = document.getElementById('li4')
+        let li5 = document.getElementById('li5')
+
+
+        // createa new li
+
+        let li6 = document.createElement("li");
+        console.log(li6);
+
+        let li7 = document.createElement("li");
+        console.log(li7);
+
+        let li8 = document.createElement("li");
+        console.log(li8);
+
+
+
+        let li9 = document.createElement("li");
+        console.log(li9);
+
+
+
+        //inserting text
+        li6.innerText = 'List 6';
+        li7.innerText = 'List 7';
+        li8.innerText = 'List 8';
+        li9.innerText = 'List 9';
+
+        list.appendChild(li6);
+        list.append(li7,li8)
+
+
+        //prepend
+        list.prepend(li9)
+        //setAttribute
+        li6.setAttribute('id','li6')
+        //getAttribute
+        console.log(li6.getAttribute("id"));
+        console.log(li6.getAttribute("class"));
+        //hasAttribute- T or F
+        console.log(li6.hasAttribute('id'));
+        console.log(li6.hasAttribute('class'));
+
+        //replaceChild
+        list.replaceChild(li6,li4)
+
+        //replaceChildren- replaceWith, remove, removeWith
+
+
+        
+        
+        
+
+    </script>
+
+</body>
+
+</html>

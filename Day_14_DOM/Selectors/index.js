@@ -37,5 +37,24 @@ document.getElementsByClassName('para')[0].style.color = "white";
 
 //querySelector
 
+console.log("query selector");
+let data = document.querySelector('h4');
+console.log(data);
+data.style.backgroundColor ="lightgrey"
+console.log(document.querySelector('#heading'));
+console.log(document.querySelector(".para"));
+
+
+//querySelectorAll
+console.log("QuerySelectorAll");
+console.log(document.querySelectorAll("h4,h6"));
+document.querySelectorAll('h4')[1].style.fontSize = "40px"
+
+
+
+
+
+
+
 
 
