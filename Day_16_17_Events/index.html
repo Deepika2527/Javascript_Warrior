@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #btn{
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            height: 40px;
+            width: 140px;
+            color: orangered;
+
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <h1>Events ❤️❤️</h1>
+
+        <!-- <button id="btn" onclick="alert('Added to the cart')">Click me</button> -->
+         <!-- <button id="btn" onclick="trigger(event)" >Click me</button> -->
+          <button id="btn" >Click me</button> 
+    </center>
+
+
+
+    <script>
+
+        //way 2 using functions
+        function trigger(event){
+            console.log("Events",event);
+            
+            // alert('Trigger function is activated')
+
+            
+        }
+
+        //  function trigger(){
+        //     alert('Trigger function is activated update')
+
+        // }
+
+
+        //w-3 addEventLisitenerMethod
+
+        let btn = document.getElementById('btn')
+        console.log(btn);
+        btn.addEventListener('click',()=>{
+            alert('clicked once')
+        })
+
+        btn.addEventListener('click',()=>{
+            alert("Clicked again")
+        })
+
+
+        
+    </script>
+    
+</body>
+</html>

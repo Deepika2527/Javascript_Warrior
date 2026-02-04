@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BubblingCapturing</title>
+
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 100vw; */
+        }
+
+        div{
+            border: 1px solid black;
+            /* padding: 10px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+        #gp{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(218, 76, 76);
+        }
+        #pr{
+            height: 300px;
+            width: 300px;
+            background-color:lightslategrey;
+        }
+        #ch{
+            height: 200px;
+            width:200px;
+            background-color: lightpink;
+        }
+        #gch{
+            height: 100px;
+            width: 100px;
+            background-color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div id="gp">GrandParent
+        <div id="pr">Parent
+            <div id="ch">Child
+                <div id="gch">GrandChild</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

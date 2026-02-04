@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard</title>
+</head>
+<body>
+
+
+    Data: <input type="text" name="" id="txt" placeholder="enterhere">
+
+
+
+    <script>
+        let inpt =  document.getElementById('txt');
+        console.log(inpt);
+        
+        // inpt.addEventListener('keydown',(e)=>{
+        //     console.log("Key is pressed");
+        //     console.log(e);
+        //      console.log("Key is pressed",e.key);
+            
+            
+            
+        // })
+           inpt.addEventListener('keyup',(e)=>{
+            console.log("Key is pressed");
+            console.log(e);
+             console.log("Key is pressed",e.key);
+            
+            
+            
+        })
+    </script>
+    
+</body>
+</html>

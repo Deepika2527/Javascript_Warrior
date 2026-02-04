@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassNameList</title>
+    <style>
+        .bg{
+            background-color: burlywood;
+            color:brown;
+            font-size: 32px;
+            text-align: center;
+            border: 5px dotted lightgreen;
+
+        }
+        .letterspacing{
+            letter-spacing: 10px;
+        }
+        .dark{
+            background-color: lightslategrey;
+        }
+        .light{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body >
+
+    <p id="para" class="pr light">This is para in Js</p>
+<script>
+
+    // let p = document.getElementsByTagName('p');
+    // let p = document.getElementsByClassName('pr');
+    let para = document.getElementById('para')
+    // let p = document.getElementById
+    console.log(para);
+    // para.className= "bg"
+    // para.className = "letterspacing"
+
+
+    //classList - add, remove,contains,toogle
+
+
+    para.classList.add('bg','letterspacing');
+    para.classList.remove('pr')
+    para.classList.toggle('dark');
+    para.classList.toggle('light')
+   console.log( para.classList.contains('light'))
+
+
+    // document.body.classList.toggle('dark');
+
+
+
+
+
+    //task create a btn - initinal the bg shoul b light, when we clcik on that btn the bg should change to dark
+
+    
+    
+</script>
+    
+</body>
+</html>

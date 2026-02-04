@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+    <style>
+         #btn{
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            height: 60px;
+            width: 140px;
+            color: orangered;
+
+        }
+        #btn{
+            background-color: lightgreen;
+        }
+
+        div{
+            height: 100px;
+            width : 200px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 100px;
+            background-color: lightskyblue;
+        }
+        span{
+            color: green;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Add to cart</button>
+    <div id="divi">Hello
+        <span>World</span>
+    </div>
+
+
+
+    <script>
+        let btn = document.getElementById('btn');
+        console.log(btn);
+
+      //rightcLICK
+      btn.addEventListener('contextmenu',()=>{
+        alert('Im right cliked')
+      })
+        //click
+
+        // btn.addEventListener('click',(e)=>{
+        //     alert('Im click-mouseEvent')
+        //     console.log(e)
+        //     console.log(e.type);
+            
+        // })
+
+
+
+        //doubleclick
+        //  btn.addEventListener('dblclick',()=>{
+        //     alert('Im Dclick-mouseEvent')
+        // })
+
+
+        // mouseover
+
+        //   btn.addEventListener('mouseover',()=>{
+        //     alert('Im mouseOver-mouseEvent')
+        // })
+       //mouseout
+        //  btn.addEventListener('mouseout',()=>{
+        //     alert('Im mouseOut-mouseEvent')
+        // })
+
+
+
+        //mouseenter
+
+        //  btn.addEventListener('mouseenter',()=>{
+        //     alert('Im MouseEntered -mouseEvent')
+        // })
+    //mouseleave
+        // btn.addEventListener('mouseleave',()=>{
+        //     alert('mouse is left')
+        // })
+
+
+
+        //movemove
+        // btn.addEventListener('mousemove',(e)=>{
+        //     console.log('Mouse is moving');
+        //     console.log(e.type);
+            
+            
+        // })
+
+
+
+
+
+
+
+        let div =  document.getElementById('divi');
+        console.log(div);
+
+        // div.addEventListener('mouseover',()=>{
+        //     console.log("Triggered - Mouseover");
+            
+        // })
+
+
+        //  btn.addEventListener('mouseout',()=>{
+        //     console.log('Im mouseOut-mouseEvent')
+        // })
+
+
+
+        //  btn.addEventListener('mouseenter',()=>{
+        //     console.log('Im mouesEnter -mouseEvent')
+        // })
+
+
+        // btn.addEventListener('mouseleave',()=>{
+        //     console.log('Im mouseLeaves -mouseEvent')
+        // })
+
+
+
+
+
+        
+        
+
+        
+    </script>
+    
+</body>
+</html>

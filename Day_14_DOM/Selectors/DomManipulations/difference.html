@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+</head>
+<body>
+
+
+    <p id="para">Hello Js</p>
+    <h2 id="head"> Hello <span style="display: none;">world</span> Anu</h2>
+      <!-- <h2>Hello <span style="visibility: hidden;">world</span> Anu</h2> -->
+    
+
+
+    <script>
+        let para = document.getElementById('para');
+        console.log(para);
+        // para.innerHTML = "Hello JavaScript"
+        //  para.innerText = "Hello JavaScript students";
+        //  para.textContent = "Hello Jscript";
+
+        // difference 1
+      para.innerHTML = "<b>Hello Javascript </b>";
+      para.innerText= "<b>Hello Javascript </b>";
+      para.textContent = "<b>Hello Javascript </b>"
+
+
+      //diffence2
+      let h = document.getElementById('head')
+      console.log("InnerHtml: ", h.innerHTML);
+      console.log("InnerText: ", h.innerText);
+      console.log("TectContent: ", h.textContent);
+      
+      
+      
+
+// innerHtm- insertsHtml elem
+// innerText - Get Visible text
+//textContent - safe
+
+        
+    </script>
+
+    
+</body>
+</html>

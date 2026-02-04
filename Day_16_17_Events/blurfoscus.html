@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlurFocus</title>
+    <style>
+        input{
+            outline: none;
+        }
+        .name{
+            border: 2px solid green;
+        }
+        .email{
+            border : 10px solid orange;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <form action="" id="frmid">
+      Name :  <input type="text" name="" id="nm"> <br><br>
+      Email : <input type="email" name="" id="em">
+    
+    </form>
+
+
+    <script>
+        // let nm = document.getElementById('nm');
+        // let em = document.getElementById('em');
+
+
+        // nm.addEventListener('focus',()=>{
+        //     console.log("Foused in the name feild");
+        //     nm.classList.add('name')
+            
+        // });
+
+        // nm.addEventListener('blur',()=>{
+        //   nm.classList.remove('name')
+            
+        // })
+        // em.addEventListener('blur',()=>{
+        //     console.log('Blurred from the nm feild');
+        //     em.classList.add('email')
+            
+        // })
+
+
+        //let see focusin and focusOut
+        let formid =  document.getElementById('frmid');
+        formid.addEventListener('focusin',()=>{
+            formid.style.border = '5px solid green'
+        })
+
+        formid.addEventListener('focusout',()=>{
+            formid.style.border = "3px solid orange";
+            
+        })
+
+
+
+    </script>
+
+
+    
+
+
+</body>
+</html>
