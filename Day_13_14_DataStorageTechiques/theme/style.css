@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.dark{
+    background-color: #333;
+    color: #fff;
+}
+
+.light{
+    background-color: #fff;
+    color:#333
+}
+
+#btn{
+    padding: 20px 10px;
+    border-radius: 5px;
+    color: rgb(0,130,190)
+}
+div{
+    width: 100%;
+    text-align: center;
+}
+
+

@@ -8,7 +8,7 @@ let products =
     desc :'it is a really good mobile...',
     image : './mobile.jpg',
     price: 30000,
-    inStock: true,
+    inStock: false,
     storage : '6gb'
 
    },
@@ -29,7 +29,7 @@ let products =
     desc :'it is a really good mobile...',
     image : './mobile.jpg',
     price: 50000,
-    inStock: true,
+    inStock: false,
     storage : '4gb'
 
    },
@@ -100,6 +100,7 @@ function renderProduct(prodcut){
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">${item.title}</h5>
     <p class="card-text"> ${item.desc}</p>
+    <p> </p>
     <a href="#" class="btn btn-primary mt-auto">Add to cart</a>
   </div>
 </div>

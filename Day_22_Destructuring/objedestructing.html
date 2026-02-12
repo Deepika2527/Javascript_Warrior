@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+
+    <h2>Object Destructing</h2>
+
+
+    <script>
+
+        let person = {
+            name: 'Anu',
+            clss : 'Js',
+            mode: 'Online',
+            trainer : 'Deepika'
+        }
+        // console.log(person);
+
+        // console.log(person.name);
+        // console.log(person.clss);
+
+
+
+
+
+        let {name: name1, clss, mode, trainer, coun ="uk" } = person
+        console.log(name1);
+        console.log(clss);
+        console.log(mode);
+        console.log(coun);
+
+
+        //realtime
+        async function test() {
+            let data = await fetch('https://dummyjson.com/quotes')
+            console.log(data);
+            // let fData = await data.json()
+            // console.log(fData);
+            // console.log(fData.quotes);
+            
+
+            let {quotes} =  await data.json();
+            console.log(quotes);
+            
+            
+            
+            
+        }
+        test()
+        
+        
+        
+        
+        
+        
+        
+
+
+    </script>
+    
+</body>
+</html>
