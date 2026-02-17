@@ -89,6 +89,9 @@ console.log(products);
 
 
 let container = document.getElementById('container');
+let cart =[];
+console.log(cart);
+
 
 function renderProduct(prodcut){
     container.innerHTML = ''
@@ -101,7 +104,7 @@ function renderProduct(prodcut){
     <h5 class="card-title">${item.title}</h5>
     <p class="card-text"> ${item.desc}</p>
     <p> </p>
-    <a href="#" class="btn btn-primary mt-auto">Add to cart</a>
+    <a href="#" class="btn btn-primary mt-auto" >Add to cart</a>
   </div>
 </div>
 
@@ -138,3 +141,8 @@ let filterPro = () =>{
     
 
 }
+
+
+
+
+

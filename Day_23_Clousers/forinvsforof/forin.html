@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forin forof</title>
+</head>
+<body>
+
+
+    <h1>Forof  vs forin</h1>
+
+    <p>Forof- Array's</p>
+    <p>Forin- index values -key-values</p>
+
+    <ul id="container"></ul>
+    <ul id ="cont"></ul>
+
+
+
+    <script> 
+    let no =  [1,2,3,4,5,6]
+
+    console.log('Using for of');
+
+    for(let nums of no){
+        console.log(nums);
+        
+    }
+
+    for(let num in no){
+        console.log(num);
+        
+    }
+
+
+    let person = {
+        name: 'Anu',
+        class : 'Js',
+        mode: 'Online'
+    }
+
+    for(let p in person){
+        // console.log(p);
+        // console.log(person[p]);
+        console.log(`Keys ${p} : Values ${person[p]}`);
+        
+        
+        
+    }
+
+
+    for(let key of Object.keys(person)){
+        console.log(key);
+        
+    }
+      for(let value of Object.values(person)){
+        console.log(value);
+        
+    }
+    
+    for(let [k,v] of Object.entries(person)){
+        console.log(`${k} : ${v}`);
+        
+    }
+
+
+        let courses = ['Html','Js','Python']
+        let container = document.getElementById('container')
+        for(let course of courses){
+            li = document.createElement('li')
+            li.textContent = course
+            container.append(li)
+        }
+
+        let userDetails = {
+            name : 'Anu',
+            role : 'React',
+            exp : 2,
+            package : 7000000
+        }
+        
+
+    </script>
+    
+</body>
+</html>
