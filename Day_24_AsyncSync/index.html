@@ -50,4 +50,327 @@ let p = new Promise((resolve,reject)=>{
 
 
 
--->
+
+1. API (Application Programming Interface)
+Definition
+
+API stands for Application Programming Interface.
+
+It is a mechanism that allows two systems (Frontend and Backend) to communicate with each other.
+
+API acts as a bridge between client and server.
+
+Purpose of API
+
+Enables communication between frontend and backend
+
+Transfers data between systems
+
+Provides access to server resources
+
+Handles requests and responses
+
+Communication Flow
+Client (Frontend) → API → Backend → Database
+Database → Backend → API → Client
+
+Components
+Client
+
+The system or user that sends a request.
+
+API
+
+The interface that transfers the request and response.
+
+Backend / Server
+
+Processes the request.
+
+Database
+
+Stores the data.
+
+API Documentation
+
+Contains information about how to use the API.
+
+Response
+
+Data sent back to the client.
+
+2. JSON (JavaScript Object Notation)
+Definition
+
+JSON is a data format used to store and transfer data between systems.
+
+Features
+
+Lightweight
+
+Easy to read and write
+
+Language independent
+
+Used in APIs
+
+Structure
+
+Data is stored in key-value pairs
+
+Keys are strings
+
+Uses double quotes
+
+Organized using objects and arrays
+
+Purpose
+
+Used for sending data from server to client
+
+Used for receiving data from client to server
+
+3. Fetch API
+Definition
+
+Fetch is a built-in JavaScript method used to send requests to an API.
+
+Purpose
+
+Communicates with server
+
+Requests data
+
+Sends data
+
+Receives response
+
+Important Point
+
+Fetch returns a Promise.
+
+4. Promise
+Definition
+
+A Promise is an object that represents the future result of an asynchronous operation.
+
+Promise States
+
+Pending
+
+Fulfilled
+
+Rejected
+
+5. Asynchronous Function
+Definition
+
+An asynchronous function is a function that runs independently without blocking the execution of other code.
+
+It is declared using the async keyword.
+
+Important Points
+
+Async function always returns a Promise
+
+Used to handle asynchronous operations
+
+Makes code easier to manage
+
+Syntax
+async function functionName(){
+
+}
+
+6. Await Keyword
+Definition
+
+await is used to wait for the Promise to complete.
+
+Important Points
+
+Used inside async function only
+
+Pauses execution until Promise resolves
+
+Returns the resolved value
+
+7. Async and Await Relationship
+
+async makes a function asynchronous
+
+await waits for the Promise result
+
+Both work together to handle asynchronous operations
+
+8. Data Flow Summary
+Client sends request
+API receives request
+Backend processes request
+Database provides data
+API sends response
+Client receives data in JSON format
+
+9. Key Points Summary
+
+API
+
+Communication interface
+
+Connects frontend and backend
+
+JSON
+
+Data format
+
+Used for data transfer
+
+Fetch
+
+Used to communicate with API
+
+Returns Promise
+
+Promise
+
+Represents future result
+
+Async
+
+Declares asynchronous function
+
+Returns Promise
+
+Await
+
+Waits for Promise
+
+Used inside async function
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronus function</title>
+</head>
+<body>
+
+
+    <h1>FunctionAsynch</h1>
+
+
+
+
+
+    <script>
+
+    //    let p = new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("Im from promise1")
+    //     },5000)
+    //    })
+
+    //    let p1 = new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("Im from Promise 2")
+    //     },10000)
+    //    })
+
+
+
+
+    //    async function test () {
+
+    //        let d = await p;
+    //        console.log(d);
+    //        console.log("Hello Javascript");
+           
+
+
+    //        let d1 = await p1;
+    //        console.log(d1);
+    //        console.log("Welcoming React");
+        
+    //    }
+    //    test()
+
+
+
+
+           //normal function
+        //    function data(){
+        //     // return "Javascript"
+        //     p.then((mes)=>{
+        //         console.log(mes);
+                
+        //     })
+        //    }
+        //    data()
+
+        //    let res = data()
+        //    console.log(res);
+
+        //async function
+
+        //  async function test(){
+        //     // return "JavaScript"
+        //     // console.log(p);
+
+        //     let res = await p;
+        //     console.log(res);
+            
+
+            
+        //  }
+        //  test()
+
+        //  let result = test()
+        //  console.log(result);
+
+
+
+
+        async function products() {
+
+        let pro = await fetch("https://dummyjson.com/products")
+        console.log(pro);
+        // let dataPro = await pro.json()
+        // console.log(dataPro); 
+        //returning an object with key-value pairs from this we need to retrieve the productskey
+        //  console.log(dataPro.products);
+
+        //way 2
+        let {products} =  await pro.json()  
+        // {products:'',limit:30,skip:0,total:30}
+        console.log(products);
+        
+
+
+
+
+
+
+
+         
+
+        
+       
+       
+        
+        
+        
+            
+        }
+        products()
+
+         
+           
+
+
+
+
+    </script>
+    
+</body>
+</html>

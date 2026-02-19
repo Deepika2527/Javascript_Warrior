@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Asynch</h1>
+
+
+    <script>
+        let p = new Promise((res,rej)=>{
+            console.log('Data');
+            
+           return 'hello'
+            
+        })
+        console.log(p);
+        
+        // function data(){
+        //     return 'hello'
+
+        // }
+        // rs = data()
+        // console.log(rs);
+
+        async function test() {
+           return p
+        }
+        test()
+        
+    </script>
+    
+</body>
+</html>

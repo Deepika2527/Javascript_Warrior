@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronus function</title>
+</head>
+<body>
+
+
+    <h1>FunctionAsynch</h1>
+
+
+
+
+
+    <script>
+
+    //    let p = new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("Im from promise1")
+    //     },5000)
+    //    })
+
+    //    let p1 = new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("Im from Promise 2")
+    //     },10000)
+    //    })
+
+
+
+
+    //    async function test () {
+
+    //        let d = await p;
+    //        console.log(d);
+    //        console.log("Hello Javascript");
+           
+
+
+    //        let d1 = await p1;
+    //        console.log(d1);
+    //        console.log("Welcoming React");
+        
+    //    }
+    //    test()
+
+
+
+
+           //normal function
+        //    function data(){
+        //     // return "Javascript"
+        //     p.then((mes)=>{
+        //         console.log(mes);
+                
+        //     })
+        //    }
+        //    data()
+
+        //    let res = data()
+        //    console.log(res);
+
+        //async function
+
+        //  async function test(){
+        //     // return "JavaScript"
+        //     // console.log(p);
+
+        //     let res = await p;
+        //     console.log(res);
+            
+
+            
+        //  }
+        //  test()
+
+        //  let result = test()
+        //  console.log(result);
+
+
+
+
+        async function products() {
+
+        let pro = await fetch("https://dummyjson.com/products")
+        console.log(pro);
+        // let dataPro = await pro.json()
+        // console.log(dataPro); 
+        //returning an object with key-value pairs from this we need to retrieve the productskey
+        //  console.log(dataPro.products);
+
+        //way 2
+        let {products} =  await pro.json()  
+        // {products:'',limit:30,skip:0,total:30}
+        console.log(products);
+        
+
+
+
+
+
+
+
+         
+
+        
+       
+       
+        
+        
+        
+            
+        }
+        products()
+
+         
+           
+
+
+
+
+    </script>
+    
+</body>
+</html>

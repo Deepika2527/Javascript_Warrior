@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+
+    <h1>Random Quotes</h1>
+
+
+
+    <script>
+        // let user = {name: "Rahul"}
+        // console.log(user);
+        // let jsonData =  JSON.stringify(user)
+        // console.log(jsonData);
+        
+        
+        
+
+
+
+        function randomQuotes(){
+            let data = fetch('https://dummyjson.com/quotes')
+            .then((res)=>{
+                console.log(res);
+                // console.log(res.json());
+                return res.json()
+                
+            }).then((quote)=>{
+                console.log(quote);
+                console.log(quote.quotes);
+                // console.log(quote.quotes[6].quote);
+                
+                
+            })
+            console.log(data);
+            
+        }
+        randomQuotes()
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
