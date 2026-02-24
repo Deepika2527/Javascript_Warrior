@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charcter set</title>
+</head>
+<body>
+
+    <h1>Charcter set</h1>
+
+
+
+    <script>
+        let passwrd = "Otp is 4567 welcomne@_ **"
+        console.log(passwrd.match(/\d/g));
+        console.log(passwrd.match(/\D/g));
+        
+        
+        let word = "Welcome to Ait. Wifi paswrd id ait@123_A&&"
+
+        console.log(word.match(/\w/g));
+        console.log(word.match(/\W/g));
+
+
+        let spaces = "Hello world. \n The World     of programming is very funny andx\t tricky"
+        console.log(spaces);
+        console.log(spaces.match(/\s/g));
+        console.log(spaces.match(/\S/g));
+
+
+
+        let sentc = "Hello world @1234 happy me %6"
+        console.log(sentc.match(/[^a-z]/g));
+        console.log(sentc.match(/[A-Z]/g));
+        console.log(sentc.match(/[0-9]/g));
+        console.log(sentc.match(/[a-zA-Z]/g));
+         console.log(sentc.match(/[a-zA-Z0-9]/g));
+        
+        
+        // ^ - start  or Not in charcter set
+
+        // $ - end
+
+
+        let name = "Hello World test"
+        console.log(name.match(/^Hello/));
+         console.log(name.match(/^hello/));
+         console.log("Using $-ending");
+         
+          console.log(name.match(/test$/));
+        console.log(name.match(/world$/));
+
+        console.log("using ^ and $");
+        console.log(name.match(/^Hello World test$/));
+        console.log(name.match(/^Hello,test$/));
+        
+        
+
+        
+        
+        
+        
+        
+
+        
+
+
+    </script>
+    
+</body>
+</html>

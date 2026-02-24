@@ -1,0 +1,127 @@
+<!-- 
+ 
+What is RegularExpression:
+Regex ?
+To validate the user's data we will use the regex - @,capitallleter, 
+Extracting the user's data
+To set the passwords - min to max, includes special chat=racted
+form validations
+
+
+
+To the check the Indian no
+
+Number can start with 6-9
+It should be 10 digiits number
+1  rest 9
+/^[6-9]\d{9}$/
+
+
+
+delimiters -/w/
+
+where the apttern is defined between them
+
+
+
+We can create the regex in 2 ways
+1. Literal way
+2. Constructor way
+
+literal - Most used methods
+syntax :
+/pattern/
+/pattern/flags
+
+/- start delimiter
+
+pattern - What are we suppose to be search from the string abc,hello,all
+/- end delimiter
+
+
+example : /abc/, /hello/, /all/
+
+flags - 
+global - \g
+Case insensitive- \i
+
+
+
+2. CONSTRUCTOR -
+
+syntax:
+let regex = new RegExp('pattern')
+let regex = new RegExp('pattern','flags')
+
+
+
+
+What are the method we use in regex()
+
+1. Match()
+This method will return the array of the first occurance of the element.
+[]
+its return null if not found
+
+syntax:
+string.match(/pattern/)
+
+
+2. Search():
+It returns the index values/pos
+if its is not found it returns -1
+
+syntax:
+string.search(/pattern/)
+
+
+3. test()-
+
+Returns boolean values
+syntax:
+pattern.test(strng)
+
+
+
+
+Charcter set:
+\d -it contains only digits                                      Digit
+\D - its retrieves symbols,letters,whitespace except digits
+\w -    letters,_,                                               wordchactre
+\W   -Opposite to \w -get special symbols, no letters, no _
+\s  - \n\t spaces                                                 spaces
+\S    - opposite to \s 
+[a-z] - a-z
+[A-Z] - A-Z
+[0-9] - 0-9
+[A-za-z]
+[a-zA-Z0-9]
+
+
+    // ^ - start  or Not in charcter set
+
+        // $ - end
+
+
+quantifiers
+*
++
+?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
